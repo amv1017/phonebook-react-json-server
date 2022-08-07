@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "prepare": "yarn global add pm2@latest",
     "backend": "node db.js && json-server --watch db.json --port=8080",
     "dev": "wmr --port=3000 --host",
-    "build": "wmr build && pm2 stop all && pm2 start rn-server.js"
+    "build": "wmr build"
   },
   "alias": {
     "react": "preact/compat",

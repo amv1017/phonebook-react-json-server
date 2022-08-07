@@ -39,7 +39,10 @@ export default () => {
       Телефон:
       <input type="text" name="phone" onChange={handleChange} />
     </label>
-    <input type="submit" value="Отправить" />
+    <label>
+      <br />
+      <input className="submit" type="submit" value="Отправить" />
+    </label>
   </form>
   )
 }
