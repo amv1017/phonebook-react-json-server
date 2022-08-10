@@ -1,6 +1,10 @@
 const app = require('express')();
 const { v4 } = require('uuid');
 
+const loki = require('lokijs')
+
+const db = new loki('api/db.json')
+
 app.get('/api', (req, res) => {
   const path = `/api/item/${v4()}`;
   res.setHeader('Content-Type', 'text/html');
